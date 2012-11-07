@@ -1,0 +1,12 @@
+<a:application xmlns:a="http://ajax.org/2005/aml">
+    <a:bar id="barmdpreview" flex="1" anchors="0 0 0 0" visible="false">
+        <div style="overflow:scroll;width:100%;height:100%;background-color:white;">
+            <div class="markdownPreview" style="padding:15px;"></div>
+            <style>
+                .markdownPreview code {
+                    color:red;
+                }
+            </style>
+        </div>
+    </a:bar>
+</a:application>

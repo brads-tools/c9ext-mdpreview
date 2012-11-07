@@ -1,0 +1,14 @@
+var pkg = {
+    "name": "ext.mdpreview",
+    "version": "0.0.3",
+    "main": "mdpreview-ext.js",
+    "private": true,
+    "plugin": {
+        "provides": [
+            "ext.mdpreview"
+        ],
+        "consumes": [
+            "client-plugins"
+        ]
+    }
+};
