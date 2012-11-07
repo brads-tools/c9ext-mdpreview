@@ -1,0 +1,14 @@
+var pkg = {
+    "name": "ext.popout",
+    "version": "0.0.1",
+    "main": "popout-ext.js",
+    "private": true,
+    "plugin": {
+        "provides": [
+            "ext.popout"
+        ],
+        "consumes": [
+            "client-plugins"
+        ]
+    }
+};
