@@ -21,6 +21,7 @@ enjoy,
 Bradley Matusiak : [bmatusiak@gmail.com][email].
 
 res: marked.js -- A javascript Markdown. @ https://github.com/chjj/marked
+res: highlight.js -- A code Highlighter. @ http://softwaremaniacs.org/soft/highlight/en/
 
 --------------------
 
