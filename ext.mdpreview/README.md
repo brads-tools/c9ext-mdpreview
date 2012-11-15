@@ -4,13 +4,13 @@ c9ext-mdpreview
 Markdown Previewer
 ------------------
 
-https://c9.io/usabrad86/c9ext-brad/workspace/plugins-client/ext.mdpreview/mdpreview.js
+[https://raw.github.com/brads-tools/c9ext-mdpreview/master/ext.mdpreview/mdpreview.js](https://raw.github.com/brads-tools/c9ext-mdpreview/master/ext.mdpreview/mdpreview.js)
 
 the link above should allow you to add the c9 extentions area
 
 **How to use**
 
-Once you add this ext, it gives you a menu option "`Tools/Preview as Markdown`"
+Once you add this ext, it gives you a menu option "`Tools/Preview Markdown`"
 
 just open a markdown file and click the menu option,
 

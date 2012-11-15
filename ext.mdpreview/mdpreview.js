@@ -9,8 +9,16 @@ define(function(require, exports, module) {
     var ext = require("core/ext");
     var editors = require("ext/editors/editors");
     var menus = require("ext/menus/menus");
-    var markup = require("text!./mdpreview.xml");
-    var _showdown = require("./res/showdown.js").Showdown;
+    var markup = '<a:application xmlns:a="http://ajax.org/2005/aml">'+
+                    '<a:bar id="barmdpreview" flex="1" anchors="0 0 0 0" visible="false">'+
+                    '<div style="overflow:scroll;width:100%;height:100%;background-color:white;">'+
+                    '<div class="markdownPreview" style="padding:15px;"></div>'+
+                    '<style>.markdownPreview code {color:red;}</style>'+
+                    '</div>'+
+                    '</a:bar>'+
+                    '</a:application>';
+                    
+    var _showdown = require("./showdown.js").Showdown;
     var markdown = new _showdown.converter();
 
     module.exports = ext.register("ext/mdpreview/mdpreview", {
@@ -106,11 +114,12 @@ define(function(require, exports, module) {
         hook: function() {
             var _self = this;
             this.nodes.push(
-            menus.addItemByPath("Tools/Preview as Markdown", new apf.item({
+            menus.addItemByPath("Tools/Preview Markdown", new apf.item({
                 onclick: function() {
                     _self.mdpreviewClicked();
                 },
                 isAvailable: function(editor) {
+                    if(window.tabEditors.getPage().name.toString().substr(-3) == ".md")
                     return true;
                 }
             }), 0));
