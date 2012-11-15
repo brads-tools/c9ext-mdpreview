@@ -21,6 +21,8 @@ define(function(require, exports, module) {
     var _showdown = require("./showdown.js").Showdown;
     var markdown = new _showdown.converter();
 
+    var marked = require("./marked.js");
+
     module.exports = ext.register("ext/mdpreview/mdpreview", {
         name: "MDPreview v0.3",
         dev: "Bradley Matusiak",
@@ -61,7 +63,8 @@ define(function(require, exports, module) {
         },
 
         renderMarkdown: function(markdownText) {
-            var html = markdown.makeHtml(markdownText);
+            var html = marked(markdownText);
+            //var html = markdown.makeHtml(markdownText);
             return html;
         },
 
@@ -112,6 +115,7 @@ define(function(require, exports, module) {
         },
 
         hook: function() {
+            window.console.log("Markdown Preview c9ext loaded.");
             var _self = this;
             this.nodes.push(
             menus.addItemByPath("Tools/Preview Markdown", new apf.item({

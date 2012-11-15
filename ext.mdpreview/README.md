@@ -20,7 +20,7 @@ enjoy,
 
 Bradley Matusiak : [bmatusiak@gmail.com][email].
 
-res: showdown.js -- A javascript port of Markdown. @ Copyright (c) 2007 John Fraser.
+res: marked.js -- A javascript Markdown. @ https://github.com/chjj/marked
 
 --------------------
 
