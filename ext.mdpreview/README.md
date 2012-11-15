@@ -26,8 +26,3 @@ res: marked.js -- A javascript Markdown. @ https://github.com/chjj/marked
 
 [email]: mailto:bmatusiak@gmail.com
 
-````js
-function(){
-
-}
-````
